@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Agency - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Ujian Tengah Semester</div>
+                <h1>Praktikum Sistem Informasi Geospasial Website</h1>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Klik Untuk Mulai</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section bg-light" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Identitas</h2>
+                </div>
+                <div class="row text-center">
+                    <table border="1" class="col-lg-6" align="center">
+                        <tr border="1">
+                            <th bgcolor="#D2665A">Nama</th>
+                            <td bgcolor="#F6DED8">Annisa Caesa Meilani</td>
+                        </tr>
+                        <tr border="1">
+                            <th bgcolor="#D2665A">NIM</th>
+                            <td bgcolor="#F6DED8">22/500314/TK/54829</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div class="row text-center">
+                    <h2 class="section-heading text-uppercase">Kegiatan Praktikum SIG Web</h2>
+                    <p align="justify-content-center">Mata kuliah ini diawali dengan pengenalan HTML, CSS, dan JavaScript. Pengenalan ini berlangsung dari minggu pertama hingga minggu keempat. Kemudian yaitu materi Bootrstrap pada minggu ke-5. Pada minggu ke-5 ini, mahasiswa diminta untuk memilih salah satu template Bootstrap untuk kemudian diedit dengan menampilan CV (Curicullum Vitae) dan melampirkan tugas pada website tersebut. Pada minggu tersebut kita juga mulai menggunakan GitHub sebagai media untuk berbagi dan mengumpulkan tugas. Pada minggu ke-6, materi yang diajarkan yaitu Leaflet JavaScript. Materi Leaflet berisi tentang pembuatan peta pada sebuah website sederhana. Pada materi tersebut, kita membuat sebuah peta dengan tema bebas yang dilengkapi dengan beberapa plugin. Minggu terakhir atau minggu ke-7, peta Leaflet yang sudah dibuat pada minggu sebelumnya, dilengkapi dengan sebuah data dengan format GeoJSON untuk menambahkan informasi spasial.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="text-center">
+                <h2 class="section-heading text-uppercase">Link Website</h2>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Portfolio item 1 -->
+                <div class="col-lg-6 text-center">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="https://geodesi.ugm.ac.id/">
+                            <img class="img-fluid" src="https://www.svgrepo.com/show/418911/bank-campus-court.svg" alt="Website Teknik Geodesi" width="100px" height="100px"/>
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Website Teknik Geodesi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio item 2 -->
+                <div class="col-lg-6 text-center">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="https://caesannisa.github.io/bootstrap/">
+                            <img class="img-fluid" src="https://www.svgrepo.com/show/432982/assignment.svg" alt="Tugas Praktikum SIG Web" width="100px" height="100px"/>
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tugas Praktikum SIG Web</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About-->
+        <section class="page-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Peta Tempat Favorit di UGM</h2>
+                    <h6 class="large text-muted">Berikut adalah peta lima tempat favorit saya di UGM.</h6>
+                </div>
+                <div>
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+                    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style> 
+                        h3 {
+                        border: 5px solid rgb(2, 27, 79);
+                        text-align: center;
+                        width: 1000px;
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+                        margin-right: 150px;
+                        margin-left: 50px;
+                        background-color: rgb(70, 76, 111);
+                        }
+                        html, body, section
+                        {
+                        position: relative;
+                        height: 100%;
+                        background-color: #d8d8d8;
+                        }
+                        html   {scroll-behavior: smooth;}
+                        #map {
+                        width: 1300px;
+                        height: 540px;
+                        align: center;
+                        }
+                
+                        body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+                        body {font-size:16px;}
+                        .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+                        .w3-half img:hover{opacity:1}
+                        
+                        #customers {
+                        font-family: Arial, Helvetica, sans-serif;
+                        border-collapse: collapse;
+                        width: 200%;
+                        }
+                    </style> 
+                    <body> 
+                        <div id="map"></div>
+                        <script>
+                        var gsp = L.marker([-7.7699947350801555, 110.37788067430998]).bindPopup('<center><h2>GSP</h2><p>Grha Sabha Pramana atau yang kerap disebut GSP adalah salah bangunan historis yang terletak di pusat kampus UGM. Bangunan ini difungsikan sebagai ruang pertemuan serbaguna yang digunakan oleh seluruh masyarakat.</p><justify><a href="https://maps.app.goo.gl/cX2TaRDHj8Bu6FfbA">Grha Sabha Pramana (GSP) UGM</a><br><br><img src="https://residence.ugm.ac.id/wp-content/uploads/sites/1094/2023/05/gedung-gsp-300x152.jpg" width="150px" height="100px"></center>'),
+                        pancas = L.marker([-7.76926, 110.38481]).bindPopup('<center><h2>Stadion Pancasila</h2><p>Stadion Pancasila adalah salah satu fasilitas olahraga yang disediakan oleh UGM. Stadion ini terletak di dekat Fakultas Peternakan dan Kedokteran Hewan. Stadion Pancasila kerap digunakan sebagai area dalam ajang Porsenigama.</p><justify><a href="https://maps.app.goo.gl/9bL48r2UwaGmAy8HA">Stadion Pancasila UGM</a><br><br><img src="https://ditmawa.ugm.ac.id/wp-content/uploads/sites/1212/2023/01/WhatsApp-Image-2023-01-17-at-10.10.13-AM-2.jpeg" width="150px" height="100px"></center>'),
+                        bonbin = L.marker([-7.77129, 110.38025],).bindPopup('<center><h2>Bonbin</h2><p>Kantin Humaniora atau yang kerap disebut Bonbin adalah salah satu kantin di UGM yang terletak di antara Fakultas Filsafat dan Fakultas Psikologi. Kantin ini menyediakan berbagai macam makanan dan minuman dengan harga yang ramah di kantong mahasiswa. </p><justify><a href="https://maps.app.goo.gl/RFo8741gBrP2roWRA">Kantin Humaniora (Bonbin) UGM</a><br><br><img src="https://awsimages.detik.net.id/community/media/visual/2022/09/20/kantin-filsafat-ugm-yang-dijuluki-bonbin-selasa-2092022-1_43.jpeg?w=1200" width="150px" height="100px"></center>'),
+                        geodesi = L.marker([-7.76387, 110.37266]).bindPopup('<center><h2>Teknik Geodesi</h2><p>Teknik Geodesi adalah salah satu Departemen di Fakultas Teknik UGM. Teknik Geodesi menyimpan banyak cerita bagi tempat saya tumbuh dan berkembang sebagai seorang mahasiwa</p><justify><a href="https://maps.app.goo.gl/6XFgjpZdfsZmQgAD8">Teknik Geodesi UGM</a><br><br><img src="https://geodesi.ugm.ac.id/wp-content/uploads/sites/8/2025/02/1739507435357.jpeg" width="150px" height="100px"></center>'),
+                        perpusat = L.marker([-7.76930, 110.37823]).bindPopup('<center><h2>Perpusat</h2><p>Perpusat atau Perpustakaan UGM adalah perpustakaan yang terletak di pusat kampus UGM. Perpustakaan ini menyediakan berbagai koleksi buku, paper, atau sumber belajar yang lain baik dalam bentuk fisik maupun digital.</p><justify><a href="https://maps.app.goo.gl/EHbPFfbhrBWMjYq36">Perpustakaan Pusat UGM</a><br><br><img src="https://ugm.ac.id/wp-content/uploads/2023/08/perpus.jpg" width="150px" height="100px"></center>');
+            
+                        
+                        var kampus = L.layerGroup([gsp, pancas, bonbin, geodesi, perpusat]);
+        
+                        var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            maxZoom: 19,
+                            attribution: '© OpenStreetMap'
+                        });
+
+                        var osmHOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                            maxZoom: 19,
+                            attribution: '© OpenStreetMap contributors, Tiles style by Humanitarian OpenStreetMap Team hosted by OpenStreetMap France'});
+
+        
+                        var map = L.map('map', {
+                            center: [-7.76684, 110.37975],
+                            zoom: 14,
+                            layers: [osm, kampus]
+                        });
+        
+                        var baseMaps = {
+                            "OpenStreetMap": osm,
+                            "OpenStreetMap.HOT": osmHOT
+                        };
+
+                        var overlayMaps = {
+                            "Tempat Favorit": kampus
+                        };
+
+                        var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+        
+                        var baseMaps = {
+                            "OpenStreetMap": osm,
+                            "<span style='color: red'>OpenStreetMap.HOT</span>": osmHOT
+                        };
+        
+                        var openTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+                            maxZoom: 19,
+                            attribution: 'Map data: © OpenStreetMap contributors, SRTM | Map style: © OpenTopoMap (CC-BY-SA)'
+                        });
+        
+                        layerControl.addBaseLayer(openTopoMap, "OpenTopoMap");
+                        </script> 
+                    </body> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Validasi Pekerjaan</h2>
+                    <p style="position: center;">Ketikkan "Selesai" untuk mengakhiri pekerjaan ini!</p>
+                </div>
+                <br>
+                <div>
+                    <body>
+                        <form>
+                            <label for="password">Masukkan Kata Sandi:</label>
+                            <input type="password" id="password" name="password">
+                            <br>
+                            <input type="button" value="Validasi" onclick="validateForm()">
+                        </form>
+                    </body>
+                    <script>
+                        function validateForm() {
+                            var password = document.getElementById("password").value;
+                            if (password === "Selesai") {
+                                alert("Pekerjaan telah selesai!");
+                            } else {
+                                alert("Eror: Kata sandi salah. Pekerjaan belum selesai.");
+                            }
+                        }
+                    </script> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Annisa Caesa @2025</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/caesannisa" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
